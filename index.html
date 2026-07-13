@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Match</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎵 Music Match</h1>
+
+        <p class="subtitle">
+            Learn Music Through Play
+        </p>
+
+        <div class="menu">
+
+            <button id="noteValuesBtn">🎼 Note Values</button>
+
+            <button id="noteNamesBtn">🎹 Note Names</button>
+
+            <button id="dynamicsBtn">🎶 Dynamics</button>
+
+            <button id="ornamentsBtn">🎺 Ornaments</button>
+
+            <button id="earTrainingBtn">👂 Ear Training</button>
+
+            <button id="scalesBtn">♭ Scales</button>
+        </div>  
+             <footer id="homeFooter">
+            <div class="creator">
+                Created by Inna Kuropatko 🎵
+            </div>
+        </footer>
+
+        <div id="quizScreen" style="display:none;">
+
+            <h2 id="questionTitle">Question goes here</h2>
+            <div id="feedbackMessage"></div>
+
+            <img id="questionImage" width="250">
+            <br>
+            <button id="playSoundBtn" class="play-button" style="display:none;">
+                ▶ Play Sound
+            </button>
+
+             <div class="audioContainer">
+                 <audio id="questionSound" controls></audio>
+             </div>
+
+            <br> 
+
+            <button class="answer-button" id="answer1">Answer 1</button>
+            <button class="answer-button" id="answer2">Answer 2</button>
+            <button class="answer-button" id="answer3">Answer 3</button>
+            <button id="homeBtn" class="home-button">
+                🏠 Home
+            </button>
+        </div>
+
+    </div>
+     <script src="web_questions/note_values.js"></script>
+     <script src="web_questions/note_names.js"></script>
+     <script src="web_questions/dynamics.js"></script>
+     <script src="web_questions/ornaments.js"></script>
+     <script src="web_questions/sounds.js"></script>
+
+     <script src="questions.js"></script>
+     <script src="script.js"></script>
+        
+</body>
+</html>
