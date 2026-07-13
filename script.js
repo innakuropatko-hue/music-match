@@ -14,7 +14,10 @@ let currentQuestion;
 let questionIndex = 0;
 let score = 0;
 function startQuiz(quiz) {
-
+    const title = document.getElementById("title");
+    const subtitle = document.getElementById("subtitle");   
+    if (title) title.style.display = "none";
+    if (subtitle) subtitle.style.display = "none";
     currentQuiz = quiz;
     questionIndex = 0;
     score = 0;
@@ -196,6 +199,11 @@ document.getElementById("homeBtn").addEventListener("click", () => {
     // return to menu
     quizScreen.style.display = "none";
     menu.style.display = "grid";
+
+    // show home page items again
+    document.getElementById("title").style.display = "block";
+    document.getElementById("subtitle").style.display = "block";
+    homeFooter.style.display = "block";
 
     // reset quiz
     currentQuiz = null;
