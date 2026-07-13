@@ -305,7 +305,7 @@ footer {
 
     button {
         font-size: 1rem;
-        padding: 10px 16px;
+        padding: 8px 12px;
         border-radius: 12px;
     }
 
@@ -320,7 +320,8 @@ footer {
     }
 
     .question {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        padding: 6px 8px;
     }
 
     #playSoundBtn {
