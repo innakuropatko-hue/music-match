@@ -123,21 +123,6 @@ h1 {
     transform: scale(0.95);
 }
 
-/* Phone layout */
-@media (max-width: 700px) {
-    .menu {
-        grid-template-columns: 1fr;
-    }
-
-    h1 {
-        font-size: 42px;
-    }
-
-    .menu button {
-        font-size: 24px;
-    }
-    /* Quiz screen */
-}
 .play-button {
 
     width: 320px;
@@ -307,4 +292,39 @@ footer {
     font-size: 22px;
     color: #a5d5eb;
     opacity: 0.85;
+}
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 16px;
+        border-radius: 12px;
+    }
+
+    .menu button {
+        width: 90%;
+        margin: 8px auto;
+    }
+
+    #questionImage {
+        width: 180px;
+        height: auto;
+    }
+
+    .question {
+        font-size: 1.2rem;
+    }
+
+    #playSoundBtn {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
 }
