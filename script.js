@@ -100,6 +100,7 @@ function checkAnswer(selectedAnswer, selectedButton) {
 
         setTimeout(() => {
             selectedButton.classList.remove("correct");
+            selectedButton.blur();
             feedbackMessage.textContent = "";
             loadQuestion();
         }, 1500);

@@ -123,6 +123,19 @@ h1 {
     transform: scale(0.95);
 }
 
+/* Prevent mobile browsers from leaving buttons highlighted */
+.answer-button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.answer-button:focus {
+    outline: none;
+}
+
+.answer-button:focus-visible {
+    outline: none;
+}
+
 .play-button {
 
     width: 320px;
@@ -322,7 +335,7 @@ footer {
         height: auto;
     }
 
-    .questionTitle {
+    #questionTitle {
         font-size: 1.1rem;
         padding: 6px 8px;
     }
