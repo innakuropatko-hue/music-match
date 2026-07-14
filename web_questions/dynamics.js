@@ -5,7 +5,7 @@ const dynamics_questions = [
         answer_type: "text",
         image: "assets/dynamics/Crescendo.png",
         correct: "Crescendo",
-        answers: ['Crescendo', 'Forte', 'Mezzo Piano']
+        answers: ['Crescendo', 'Piano', 'Decrescendo']
     },
 
     {
@@ -13,7 +13,7 @@ const dynamics_questions = [
         answer_type: "text",
         image: "assets/dynamics/decrescendo.png",
         correct: "Decrescendo",
-        answers: ['Piano', 'Decrescendo', 'Fortissimo']
+        answers: ['Fortissimo', 'Decrescendo', 'Mezzo Piano']
     },
 
     {
@@ -21,7 +21,7 @@ const dynamics_questions = [
         answer_type: "text",
         image: "assets/dynamics/forte.png",
         correct: "Forte",
-        answers: ['Forte', 'Fortissimo', 'Decrescendo']
+        answers: ['Piano', 'Forte', 'Crescendo']
     },
 
     {
@@ -29,7 +29,7 @@ const dynamics_questions = [
         answer_type: "text",
         image: "assets/dynamics/fortissimo.png",
         correct: "Fortissimo",
-        answers: ['Mezzo Forte', 'Fortissimo', 'Mezzo Piano']
+        answers: ['Mezzo Forte', 'Crescendo', 'Fortissimo']
     },
 
     {
@@ -37,7 +37,7 @@ const dynamics_questions = [
         answer_type: "text",
         image: "assets/dynamics/mezzo_forte.png",
         correct: "Mezzo Forte",
-        answers: ['Mezzo Piano', 'Mezzo Forte', 'Fortissimo']
+        answers: ['Crescendo', 'Pianissimo', 'Mezzo Forte']
     },
 
     {
@@ -45,7 +45,7 @@ const dynamics_questions = [
         answer_type: "text",
         image: "assets/dynamics/mezzo_piano.png",
         correct: "Mezzo Piano",
-        answers: ['Mezzo Forte', 'Crescendo', 'Mezzo Piano']
+        answers: ['Mezzo Piano', 'Decrescendo', 'Mezzo Forte']
     },
 
     {
@@ -53,7 +53,7 @@ const dynamics_questions = [
         answer_type: "text",
         image: "assets/dynamics/pianissimo.png",
         correct: "Pianissimo",
-        answers: ['Crescendo', 'Fortissimo', 'Pianissimo']
+        answers: ['Mezzo Forte', 'Forte', 'Pianissimo']
     },
 
     {
@@ -61,7 +61,7 @@ const dynamics_questions = [
         answer_type: "text",
         image: "assets/dynamics/piano.png",
         correct: "Piano",
-        answers: ['Decrescendo', 'Piano', 'Fortissimo']
+        answers: ['Mezzo Forte', 'Mezzo Piano', 'Piano']
     },
 
 ];

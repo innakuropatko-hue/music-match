@@ -13,12 +13,25 @@ let currentQuiz;
 let currentQuestion;
 let questionIndex = 0;
 let score = 0;
+function shuffle(array) {
+    const shuffled = [...array];
+
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    return shuffled;
+}
 function startQuiz(quiz) {
     const title = document.getElementById("title");
     const subtitle = document.getElementById("subtitle");   
     if (title) title.style.display = "none";
     if (subtitle) subtitle.style.display = "none";
-    currentQuiz = quiz;
+    currentQuiz = {
+    ...quiz,
+    questions: shuffle(quiz.questions)
+    };
     questionIndex = 0;
     score = 0;
     menu.style.display = "none";
@@ -179,7 +192,7 @@ document
     .addEventListener("click", () => startQuiz(quizzes.dynamics));
 document
     .getElementById("earTrainingBtn")
-    .addEventListener("click", () => startQuiz(quizzes.sounds)); 
+    .addEventListener("click", () => startQuiz(quizzes.sounds));
 document
     .getElementById("scalesBtn")
     .addEventListener("click", () => startQuiz(quizzes.scales));

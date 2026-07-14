@@ -23,6 +23,11 @@ const quizzes = {
     sounds: {
         prompt: "Which note(s) or chord(s) do you hear?",
         questions: sounds_questions
+    },
+
+    scales: {
+        prompt: "Which scale is this?",
+        questions: scales_questions 
     }
 
 };

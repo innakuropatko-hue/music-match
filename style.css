@@ -294,32 +294,35 @@ footer {
     opacity: 0.85;
 }
 @media (max-width: 600px) {
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        margin: 15px auto;
+    }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 5px;
     }
 
     .subtitle {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        margin-bottom: 15px;
     }
-
-    button {
-        font-size: 1rem;
-        padding: 8px 12px;
-        border-radius: 12px;
-    }
-
     .menu button {
-        width: 90%;
-        margin: 8px auto;
+        width: 100%;
+        padding: 10px;
+        font-size: 0.95rem;
     }
 
+    
     #questionImage {
         width: 180px;
         height: auto;
     }
 
-    .question {
+    .questionTitle {
         font-size: 1.1rem;
         padding: 6px 8px;
     }
