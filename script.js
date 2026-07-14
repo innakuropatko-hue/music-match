@@ -46,6 +46,15 @@ function loadQuestion() {
         endQuiz();
         return;
     }
+     // Reset button colors
+    answer1.classList.remove("correct", "wrong");
+    answer2.classList.remove("correct", "wrong");
+    answer3.classList.remove("correct", "wrong");
+
+    if (questionIndex >= currentQuiz.questions.length) {
+        endQuiz();
+        return;
+    }
 
     currentQuestion = currentQuiz.questions[questionIndex];
 
