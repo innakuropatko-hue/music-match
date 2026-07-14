@@ -113,12 +113,6 @@ h1 {
 }
 
 
-.answer-button:hover {
-    transform: scale(1.05);
-    background: linear-gradient(135deg, #9b59b6, #bb8fce);
-}
-
-
 .answer-button:active {
     transform: scale(0.95);
 }
@@ -344,6 +338,8 @@ footer {
         font-size: 1rem;
         padding: 10px 18px;
     }
+}
+@media (hover: hover) and (pointer: fine) {
     .answer-button:hover {
         transform: scale(1.05);
         background: linear-gradient(135deg, #9b59b6, #bb8fce);
