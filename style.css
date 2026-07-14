@@ -344,4 +344,8 @@ footer {
         font-size: 1rem;
         padding: 10px 18px;
     }
+    .answer-button:hover {
+        transform: scale(1.05);
+        background: linear-gradient(135deg, #9b59b6, #bb8fce);
+    }
 }

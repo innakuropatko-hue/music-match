@@ -46,7 +46,7 @@ function loadQuestion() {
         endQuiz();
         return;
     }
-     // Reset button colors
+    document.activeElement.blur();// Reset button colors
     answer1.classList.remove("correct", "wrong");
     answer2.classList.remove("correct", "wrong");
     answer3.classList.remove("correct", "wrong");
@@ -114,6 +114,7 @@ function checkAnswer(selectedAnswer, selectedButton) {
 
         setTimeout(() => {
             selectedButton.classList.remove("wrong");
+            selectedButton.blur();
             feedbackMessage.textContent = "";
         }, 1000);
     }
