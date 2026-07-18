@@ -319,11 +319,18 @@ footer {
     }
     .menu button {
         width: 100%;
-        padding: 20px, 10px;
-        min-height: 120px;
-        font-size: 1.1rem;
+        padding: 30px, 20px;
+        min-height: 130px;
+        font-size: 1.4rem;
     }
-
+    .answer-button {
+        width: 90%;
+        max-width: 320px;
+        height: 70px;
+        font-size: 20px;
+        margin: 8px auto;
+        display: block;
+    }
     
     #questionImage {
         width: 180px;
@@ -331,7 +338,7 @@ footer {
     }
 
     #questionTitle {
-        font-size: 1.1rem;
+        font-size: 1.8rem;
         padding: 6px 8px;
     }
 
