@@ -63,6 +63,15 @@ let currentQuestion;
 let questionIndex = 0;
 let score = 0;
 
+function preloadImages(questions) {
+    questions.forEach(question => {
+        if (question.image) {
+            const img = new Image();
+            img.src = question.image;
+        }
+    });
+}
+
 // Shuffles quiz questions randomly
 function shuffle(array) {
     const shuffled = [...array];
@@ -83,6 +92,7 @@ function startQuiz(quiz) {
     ...quiz,
     questions: shuffle(quiz.questions)
     };
+    
     questionIndex = 0;
     score = 0;
     menu.style.display = "none";
@@ -90,7 +100,7 @@ function startQuiz(quiz) {
     scalesScreen.style.display = "none";
     menuFooter.style.display = "none";
     quizScreen.style.display = "block";
-
+    preloadImages(currentQuiz.questions);
     loadQuestion();
 }
 
