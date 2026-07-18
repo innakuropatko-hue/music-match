@@ -352,4 +352,20 @@ footer {
     max-width: 350px;
     margin: 10px auto;
 }
+#scalesScreen button {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 10px auto;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .menu button {
+        min-height: 70px;
+    }
+}
 

@@ -75,7 +75,7 @@ function shuffle(array) {
     return shuffled;
 }
 function startQuiz(quiz) {
-    const title = document.getElementById("title");
+    const title = document.getElementById("homeTitle");
     const subtitle = document.getElementById("subtitle");   
     if (title) title.style.display = "none";
     if (subtitle) subtitle.style.display = "none";
