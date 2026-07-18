@@ -320,6 +320,7 @@ footer {
     .menu button {
         width: 100%;
         padding: 10px;
+        min-height: 80px;
         font-size: 0.95rem;
     }
 
@@ -346,26 +347,11 @@ footer {
     }
 
 }
-#earTrainingScreen button {
-    display: block;
-    width: 100%;
-    max-width: 350px;
-    margin: 10px auto;
-}
-#scalesScreen button {
-    display: block;
-    width: 100%;
-    max-width: 350px;
-    margin: 10px auto;
+#earTrainingScreen .menu,
+#scalesScreen .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
 }
 
-@media (max-width: 600px) {
-    .menu {
-        grid-template-columns: 1fr;
-    }
-
-    .menu button {
-        min-height: 70px;
-    }
-}
 
