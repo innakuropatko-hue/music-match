@@ -305,7 +305,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
-        margin: 20px auto;
+        margin: 15px auto;
     }
 
     h1 {
@@ -319,8 +319,8 @@ footer {
     }
     .menu button {
         width: 100%;
-        padding: 30px, 20px;
-        min-height: 130px;
+        padding: 10px;
+        min-height: 120px;
         font-size: 1.4rem;
     }
     .answer-button {
