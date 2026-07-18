@@ -1,0 +1,13 @@
+{
+  "name": "Music Match",
+  "short_name": "Music Match",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

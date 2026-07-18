@@ -25,9 +25,27 @@ const quizzes = {
         questions: sounds_questions
     },
 
-    scales: {
-        prompt: "Which scale is this?",
-        questions: scales_questions 
+    scale_identification: {
+        prompt: "Name the scale.",
+        questions: scale_identification_questions
+    },
+
+    chord_inversions: {
+        prompt: "Name the chord.",
+        questions: chord_inversions_questions,
+    },
+    chords: {
+        prompt: "Name the chord.",
+        questions: chords_questions,
+    },
+    dominant:{
+        prompt: "Name the dominant chord.",
+        questions: dominant_questions,
+    },
+    
+    scales:{
+        prompt: "Name the key signature.",
+        questions: scales_questions
     }
 
 };
