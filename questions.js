@@ -31,20 +31,20 @@ const quizzes = {
     },
 
     chord_inversions: {
-        prompt: "Name the chord.",
+        prompt: "Name the chord",
         questions: chord_inversions_questions,
     },
     chords: {
-        prompt: "Name the chord.",
+        prompt: "Name the chord",
         questions: chords_questions,
     },
     dominant:{
-        prompt: "Name the dominant chord.",
+        prompt: "Name the dominant chord",
         questions: dominant_questions,
     },
     
     scales:{
-        prompt: "Name the key signature.",
+        prompt: "Name the key signature",
         questions: scales_questions
     }
 
