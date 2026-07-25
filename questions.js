@@ -6,7 +6,7 @@ const quizzes = {
     },
 
     note_names: {
-        prompt: "Name this note?",
+        prompt: "Name this note",
         questions: note_names_questions
     },
 
@@ -21,7 +21,7 @@ const quizzes = {
     },
 
     sounds: {
-        prompt: "Which note(s) or chord(s) do you hear?",
+        prompt: "Which note do you hear?",
         questions: sounds_questions
     },
 
